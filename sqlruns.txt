@@ -1,0 +1,41 @@
+create poduct table: 
+
+create table product ( 
+    product_id int, 
+    product_name varchar(255), 
+    product_img varchar(255), 
+    product_calories int, 
+    product_price int, 
+    seller_email varchar(255) 
+) 
+
+insertions 
+
+insert into product values ( 
+    1,"Famous Italian Pizza","italianPizza.jpeg",1200,100,"gunawardhanapulsara@gmail.com" 
+);
+
+insert into product values ( 
+    2,"Veggie Supreme","veggieSupreme.jpeg",110,1500,"ishani.2017364@iit.ac.lk" 
+); 
+
+insert into product values ( 
+    3,"Tandoori Chicken","tandooriChicken.jpeg",1200,2500,"ishani.2017364@iit.ac.lk" 
+); 
+
+insert into product values ( 
+    4,"Prawn Feast","pawnFeast.jpeg",1250,2000,"pranidhi.2015302@iit.ac.lk" 
+); 
+
+insert into product values ( 
+    5,"Minty Delight","pizzaWithMint.jpeg",1200,2550,"pulsara.2017348@iit.ac.lk" 
+);  
+
+insert into product values ( 
+    6,"Woodfried Pizza","WoodfriedPizza.jpeg",1220,1900,"oshadi.2016109@iit.ac.lk" 
+); 
+
+insert into product values ( 
+    7,"Spicy Italino","extraSpicy.jpeg",1220,1950,"ishani.2017364@iit.ac.lk" 
+); 
+
