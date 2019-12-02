@@ -1,6 +1,7 @@
 <?php 
 include("db_conn.php");
 $prod_id=$_GET['prod_id'];
+echo "<p>".$prod_id."</p>"; 
 echo (' 
 <!DOCTYPE html>  
 <html> 
@@ -12,8 +13,8 @@ echo ('
 </head>'); 
 
 echo ('<body'); 
-echo ('<div data-role="page">');
-echo ('<div data-role="header"> 
+echo ('<div data-role="page"> ');
+echo ('<div data-role="header" data-theme="b"> 
         <h1>Product</h1>
         </div>
 '); 
@@ -31,14 +32,14 @@ while ($arrayp=mysqli_fetch_array($exeSQL)){
 }  
 
 echo (' 
-    <div data-role="content"> 
-    <form method="get" action="jqrun2.php?prod_id='.$prod_id.'"> 
+    <div data-role="content" > 
+    <form method="get" action="placeOrder.php?prod_id='.$prod_id.'"> 
         <div class="ui-field-contain"> 
         <label>'.$product_name.'</label>
         <label>'.$product_calories.'</label>
         <label>'.$product_price.'</label>
         </div> 
-        <button class="ui-shadow ui-btn ui-corner-all" type="submit" id="submit-2">Confirm</button> 
+        <button class="ui-shadow ui-btn ui-corner-all" type="submit" id="submit-2">Order</button> 
         
         </form> 
         </div> 
