@@ -39,3 +39,18 @@ insert into product values (
     7,"Spicy Italino","extraSpicy.jpeg",1220,1950,"ishani.2017364@iit.ac.lk" 
 ); 
 
+insert into secret_ingredient values ( 
+    1,'Italian Spice',12
+);
+
+insert into secret_ingredient values ( 
+    2,"Chick Peas",50
+); 
+
+insert into secret_ingredient values ( 
+    3,"Olive oil",35 
+); 
+
+insert into secret_ingredient values ( 
+    4,"Barbebcue Sauce", 25 
+); 
