@@ -16,8 +16,8 @@ session_start();
 
 
 
-        <div data-role="page" data-theme="b"> 
-                <div data-role="header"> 
+        <div data-role="page" > 
+                <div data-role="header" data-theme="b"> 
                     <h1>Confirm Method Of Payment
                     
 
@@ -25,26 +25,26 @@ session_start();
                 </div>  
 
                 <div data-role="content"> 
+                <div class="row">
+        <div class="col-sm-4">
+          <img src="images/Cream Pizza Love Triangle Funny Wallpaper.png" class="img-responsive" style="width:100%" alt="Image">
+         
+        </div>
 
                 <form method="get"  id="frmBooking" action="success.php" >  
                     
                     <?php  
                     
-                    $name=$_SESSION["prod_name"]; 
-                    echo ("<label> Pizza Name: ".$name."</label>"); 
-                    echo('<input type="hidden" id="item_name" value="'.$name.'"'); 
-                    ?> 
-                    
-                  
-
-                    <?php  
+                    $name=$_SESSION["prod_name"];
                     $price=$_SESSION["prod_price"];  
-                    echo ("<label> Price : ".$price."</label>"); 
+                    echo (" <div class='ui-field-contain'> <label> <b>Pizza Name: </b>".$name."</label>");
+                    echo (" <label><b> Price : </b>".$price."</label>  </div>");  
+                    echo('<input type="hidden" id="item_name" value="'.$name.'"');                                          
                     echo('<input type="hidden" id="item_value" value='.$price.'>')
                     
                     ?>
                 <fieldset data-role="controlgroup">
-                        <legend>Payment Option</legend>
+                        <legend> <b>Payment Option <b></legend>
                         <label for="rb1">Card</label>
                         <input type="radio" name="rb" id="rb1" value="Card" />
                         <label for="rb2">Cash</label>
@@ -53,6 +53,7 @@ session_start();
                 </div>  
 
                 <button class="ui-shadow ui-btn ui-corner-all"  id="confirm" >Confirm</button>
+                <a href="menu.php" class="ui-btn ui-corner-all" data-transition="slide">Cancel</a>
 
                 </form> 
                      

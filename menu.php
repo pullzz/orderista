@@ -15,9 +15,13 @@ $exeSQL=mysqli_query($conn,$sql) or die (mysqli_error());
 
 echo ('<body>'); 
 echo ('<div data-role="page">');
-echo ('<div data-role="header"> 
-        <h1></h1>
-        </div> ');
+echo ('<div data-role="header" data-theme="b"> 
+        <h1>Menu</h1>
+        </div> 
+        <div class="ui-content">
+    
+    <ul data-role="listview" data-inset="true">
+        ');
 
 while ($arrayp=mysqli_fetch_array($exeSQL)){  
     $product_id=$arrayp['product_id'];
@@ -26,23 +30,19 @@ while ($arrayp=mysqli_fetch_array($exeSQL)){
     $product_calories=$arrayp['product_calories'];
     $product_price=$arrayp['product_price'];
 
-    echo (' 
-    <div class="ui-content">
-    
-    <ul data-role="listview">
-     <li data-role="list-divider"></li>
-                <li><a href="product.php?prod_id='.$product_id.'"><img src="images/'.$image_name.'" class="ui-li-thumb">'.$product_name.'</a></li>
-                
-    </ul>
-     </div>
-
-
+    echo ('   
+     
+        <li><a href="product.php?prod_id='.$product_id.'"><img src="images/'.$image_name.'" class="ui-li-thumb">'.$product_name.'</a></li>               
     '); 
 } 
-echo ('</div>');
+echo ('</ul>
+</div>');
+echo ('
+</div>
+');
 echo ('</body>');
 echo ('</html>');
-
+// <li data-role="list-divider"></li>
 
 
 ?> 

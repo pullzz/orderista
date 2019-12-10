@@ -28,14 +28,16 @@ else {
 <!DOCTYPE html>  
 <html> 
 <head> 
-<meta name = "viewpoint" content="width= device-width, initial-scale = 1"> 
+<meta name = "viewpoint" content="width= device-width, initial-scale = 1">
+<link rel="stylesheet" href="themes/orderista_green.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> 
 <link rel ="stylesheet" href = "http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head> 
 <body>  
     <div data-role="page">  
-        <div data-role="header" data-theme="b"> 
+        <div data-role="header"> 
         <h1>Guess the Secret Ingredient</h1> 
         </div> 
         <div data-role="content">   
@@ -43,7 +45,7 @@ else {
         ?>
         </h1>
         </div> 
-        <div data-role="footer" data-theme="b"> 
+        <div data-role="footer" > 
         <h1>Orderista by BruteForce</h1>
         </div>
     </div>

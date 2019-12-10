@@ -33,6 +33,7 @@ while ($arrayp=mysqli_fetch_array($exeSQL)){
 
 echo (' 
     <div data-role="content" > 
+    
     <form method="get" action="placeOrder.php?prod_id='.$prod_id.'"> 
         <div class="ui-field-contain"> 
         <label>'.$product_name.'</label>
@@ -50,6 +51,18 @@ echo ('
 
 
 echo ('</div>');
+echo ('
+<div data-role="footer" data-id="foo1" data-position="fixed" data-theme="b">
+    <h1>Orderista by BruteForce</h1>
+	<div data-role="navbar">
+		<ul>
+			<li><a href="menu.php">Menu</a></li>
+			<li><a>Home</a></li>
+			<li><a>Account</a></li>
+		</ul>
+	</div>
+</div>
+');
 echo ('</body>');
 echo ('<html>');
 

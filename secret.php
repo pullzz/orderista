@@ -27,7 +27,7 @@ while ($arrayp=mysqli_fetch_array($exeSQL)){
 ?>
     <body>  
     <div data-role="page">  
-        <div data-role="header" data-theme="b"> 
+        <div data-role="header" class="ui-corner-all"> 
         <h1>Guess the Secret Ingredient</h1> 
         </div> 
         <div data-role="content">   
@@ -35,12 +35,12 @@ while ($arrayp=mysqli_fetch_array($exeSQL)){
         <div class="ui-field-contain">
         
         <label for="ingredient">Whats the secret?</label>
-        <input type="text" name="ingredient"  placeholder="Secret...." >   
+        <input class="ui-corner-all" type="text" name="ingredient"  placeholder="Secret...." >   
         </div> 
         <button class="ui-shadow ui-btn ui-corner-all" type="submit" id="submit-2" data-theme="b" >Find out if your right</button>
         </form>
         </div> 
-        <div data-role="footer" data-theme="b"> 
+        <div data-role="footer"  class="ui-corner-all"> 
         <h1>Orderista by BruteForce</h1>
         </div>
     </div>
