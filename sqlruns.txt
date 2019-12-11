@@ -54,3 +54,12 @@ insert into secret_ingredient values (
 insert into secret_ingredient values ( 
     4,"Barbebcue Sauce", 25 
 ); 
+
+
+
+create table rating (
+    product_id int (11) PRIMARY KEY, 
+    good int(11),
+    bad int (11)
+    
+);
